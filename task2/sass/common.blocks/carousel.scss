@@ -1,0 +1,64 @@
+@import '../colors.scss';
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: fit-content;
+
+  .carousel__arrow {
+    padding: 0 70px;
+
+    font-size: 60px;
+    color: $muted-text-color;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  .carousel__items {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  .carousel__items-item {
+    flex: 0 0 14.286%;
+    text-align: center;
+
+    & > img {
+      max-width: 80%;
+    }
+  }
+  @include desktop {
+    .carousel__arrow {
+      padding: 0 (70px * $lg-xl-coeff);
+  
+      font-size: 60px * $lg-xl-coeff;
+    }
+  }
+  @include laptop {
+    .carousel__arrow {
+      padding: 0 (70px * $md-xl-coeff);
+  
+      font-size: 60px * $md-xl-coeff;
+    }
+  }
+  @include tablet {
+    .carousel__arrow {
+      padding: 0 (70px * $sm-xl-coeff);
+  
+      font-size: 60px * $sm-xl-coeff;
+    }
+  }
+  @include phone {
+    .carousel__arrow {
+      padding: 0 (70px * $xs-xl-coeff);
+  
+      font-size: 60px * $xs-xl-coeff;
+    }
+  }
+}

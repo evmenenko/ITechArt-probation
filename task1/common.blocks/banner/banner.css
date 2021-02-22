@@ -1,0 +1,9 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 440px;
+  background-image: url(../../asset/img/banner.png);
+  background-size: 100% 441px;
+}

@@ -1,0 +1,12 @@
+.navigation__item {
+  padding: 34px 21px 35px;
+  
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+
+.navigation__item:hover {
+  color: var(--info-text-color);
+  background-color: var(--secondary-text-color);
+}

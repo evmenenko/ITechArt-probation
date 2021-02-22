@@ -1,0 +1,7 @@
+.technologies {
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--primary-bg-color);;
+}
